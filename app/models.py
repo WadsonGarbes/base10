@@ -27,10 +27,10 @@ class PaginatedAPIMixin(object):
         return data
 
 
-class Question(db.Model):
+class Question(db.Model, PaginatedAPIMixin):
     __tablename__ = 'questions'
 
-    id = db.Column(db.Integer)
+    id = db.Column(db.Integer, primary_key=True)
     subject = db.Column(db.String(200))
     body = db.Column(db.String(800))
     img_link = db.Column(db.String(200))
