@@ -15,6 +15,5 @@ def make_shell_context():
 @app.cli.command("integrate")
 def integrate_round_12():
     """populates database with some questions"""
-    print("Integrating companies and roles")
     integrate_questions()
     print("Integration OK")
