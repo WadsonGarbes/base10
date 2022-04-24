@@ -1,6 +1,6 @@
-from app import create_app
+from app import create_app, db
 from app.models import Question
-
+from app.integrator import integrate_questions
 
 app = create_app()
 
@@ -11,3 +11,10 @@ def make_shell_context():
         "db": db,
         "Question": Question
     }
+    
+@app.cli.command("integrate")
+def integrate_round_12():
+    """populates database with some questions"""
+    print("Integrating companies and roles")
+    integrate_questions()
+    print("Integration OK")
