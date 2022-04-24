@@ -26,6 +26,10 @@ Instale as dependências do projeto
 ```
 pip install -r requirements.txt
 ```
+Crie o banco de dados local (SQLite) e popule-o com as questões existentes
+```
+flask db init && flask db migrate && flask db upgrade && flask integrate
+```
 Rode o server
 ```
 flask run
