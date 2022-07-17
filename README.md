@@ -7,7 +7,7 @@
 * Criar testes
 * Criar crawler para sites com questões do enem
 * Implementar métodos POST, PUT e DELETE de questions
-* bucket pára armazenamento de imagens
+* Criar bucket pára armazenamento de imagens
 * Dockerizar a parada e subir uma imagem no docker hub
 
 ### 🐑 Clonar e rodar ⚙️
